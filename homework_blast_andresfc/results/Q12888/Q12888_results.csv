@@ -1,0 +1,80 @@
+BLASTP 2.17.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics: Alejandro A. Schaffer,
+L. Aravind, Thomas L. Madden, Sergei Shavirin, John L. Spouge, Yuri
+I. Wolf, Eugene V. Koonin, and Stephen F. Altschul (2001),
+"Improving the accuracy of PSI-BLAST protein database searches with
+composition-based statistics and other refinements", Nucleic Acids
+Res. 29:2994-3005.
+
+
+
+Database: database_uniprot/db_tp53.fasta
+           25 sequences; 8,973 total letters
+
+
+
+Query= sp|Q12888|TP53B_HUMAN TP53-binding protein 1 OS=Homo sapiens OX=9606
+GN=TP53BP1 PE=1 SV=2
+
+Length=1972
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+sp|P67939|P53_BOVIN Cellular tumor antigen p53 OS=Bos taurus OX=9...  20.8    7.9  
+sp|P67938|P53_BOSIN Cellular tumor antigen p53 OS=Bos indicus OX=...  20.8    7.9  
+
+
+>sp|P67939|P53_BOVIN Cellular tumor antigen p53 OS=Bos taurus 
+OX=9913 GN=TP53 PE=2 SV=1
+Length=386
+
+ Score = 20.8 bits (42),  Expect = 7.9, Method: Compositional matrix adjust.
+ Identities = 10/27 (37%), Positives = 13/27 (48%), Gaps = 0/27 (0%)
+
+Query  1346  PADFALPSSRGGPGKLSPRKGVSQTGT  1372
+             P    +PS +  PG    R G  Q+GT
+Sbjct  84    PLSSFVPSQKTYPGNYGFRLGFLQSGT  110
+
+
+>sp|P67938|P53_BOSIN Cellular tumor antigen p53 OS=Bos indicus 
+OX=9915 GN=TP53 PE=2 SV=1
+Length=386
+
+ Score = 20.8 bits (42),  Expect = 7.9, Method: Compositional matrix adjust.
+ Identities = 10/27 (37%), Positives = 13/27 (48%), Gaps = 0/27 (0%)
+
+Query  1346  PADFALPSSRGGPGKLSPRKGVSQTGT  1372
+             P    +PS +  PG    R G  Q+GT
+Sbjct  84    PLSSFVPSQKTYPGNYGFRLGFLQSGT  110
+
+
+
+Lambda      K        H        a         alpha
+   0.307    0.126    0.354    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 14067684
+
+
+  Database: database_uniprot/db_tp53.fasta
+    Posted date:  May 9, 2026  4:34 PM
+  Number of letters in database: 8,973
+  Number of sequences in database:  25
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40
