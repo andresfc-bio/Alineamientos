@@ -15,12 +15,16 @@ for id_protein in db:
 
 os.system("cat database_uniprot/*.fasta > database_uniprot/db_tp53.fasta")
 
-query_dir = "queries"
-queries = ["Q12888", "P70399", "P07193"]
-
 os.system("makeblastdb -in database_uniprot/db_tp53.fasta \
             -dbtype prot \
             -out database_uniprot/db_tp53")
+
+
+
+query_dir = "queries"
+queries = ["Q12888", "P70399", "P07193"]
+
+
 
 for id_protein in queries:
     download(id_protein, query_dir)
