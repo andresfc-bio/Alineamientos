@@ -1,3 +1,5 @@
+#!/usr/local/bin/Rscript
+
 source("descarga.r")
 source("generadorDB.r")
 source("alineamiento.r")
