@@ -1,14 +1,14 @@
 
 generadorDB <- function(){
 
-    if( "proteinas.fasta" %in% list.files() ){
-        print("Removiendo proteinas.fasta")
-        file.remove("proteinas.fasta")
-    }
     print("Creando base de datos")
-    cmd <- "cat *.fasta > proteinas.fasta"
+    cmd <- "mkdir DB"
     system(cmd)
-    cmd <- "makeblastdb -in proteinas.fasta -dbtype prot"
+
+    cmd <- "find . -type f -name '*.fasta' -exec cat {} + > DB/proteinas.fa"
     system(cmd)
-    
+
+    cmd <- "makeblastdb -in DB/proteinas.fa -dbtype prot -out DB/proteinas" 
+    system(cmd)
+
 }
