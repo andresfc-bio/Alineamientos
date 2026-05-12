@@ -9,3 +9,5 @@
 - **Concatenación**: Se concatena todos los archivos FASTA de la base de datos en un solo archivo `database_uniprot/db_tp53.fasta` usando `cat`.
 - **Indexación (makeblastdb)**: Se ejecuta el comando `makeblastdb` para crear una base de datos binaria optimizada para búsquedas rápidas. Esta base de datos se nombra `database_uniprot/db_tp53` y está configurada como `dbtype prot` (proteínas).
 - **Finalización**: El script finaliza
+
+![alt text](image.png)
