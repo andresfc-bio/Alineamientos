@@ -1,2 +1,3 @@
 *.fasta
-proteinas.fasta.*
+DB
+.DS_Store
