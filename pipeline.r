@@ -1,5 +1,6 @@
 source("descarga.r")
 source("generadorDB.r")
+source("alineamiento.r")
 
 
 
@@ -12,4 +13,7 @@ for(i in sequencias){
 
 generadorDB()
 
+for(i in sequencias){
+  alineamiento(i) 
+}
 
