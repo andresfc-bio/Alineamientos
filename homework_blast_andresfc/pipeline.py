@@ -10,8 +10,6 @@ db = [ "Q1JQA7", "P10361", "P79734", "Q5XII5", "P67939", "O09185", "Q64662", "Q8
 ]
 
 
-
-
 for id_protein in db:
     download(id_protein, db_dir)
 
