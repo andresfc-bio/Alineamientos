@@ -1,8 +1,5 @@
 *.fasta
-<<<<<<< HEAD
 *pycache*
-=======
 DB
 .DS_Store
 *.aling
->>>>>>> upstream/main
